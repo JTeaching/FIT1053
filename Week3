@@ -1,0 +1,12 @@
+def make_my_list(N):
+        inner_list = [None]*N
+        outer_list = [None]*N
+        for i in range(0, N):
+            inner_list[i] = 0
+        for i in range(0, N):
+            outer_list[i] = inner_list
+        for i in range(0, N):
+            for j in range(0, N):
+                outer_list[i][j] = N * i + j
+                
+make_my_list(4)
